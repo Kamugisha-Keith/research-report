@@ -1,0 +1,132 @@
+\documentclass{article}
+\title{Sorting Algorithms.}
+\author{Kamugisha Keith 12/u/6112/ps}
+\begin{document}
+AN IMPLEMENTATION TO MINIMIZE THE CONFUSION OF SORTING ALGORITHMS USING JAVASCRIPT. 
+\subsection{Introduction.}
+	Sorting refers to arranging data in a particular format, it can be in ascending or descending order. Sorting algorithm specifies the way to arrange data in a particular order which will simplify searching for results, for example looking for a particular record in database, roll numbers in merit list, a particular telephone number, any particular page in a book.
+	There are many types of Sorting techniques, we shall be working with the following sorting techniques:\par
+		
+		\textbf{Bubble Sort} Each iteration the largest element in the list moves up towards the last place. Sorting takes place by stepping through all the data items one-by-one in pairs and comparing adjacent data items and swapping each pair that is out of order.\par
+		
+		\textbf{Insertion Sort} It is a simple Sorting algorithm which sorts the array by shifting elements one by one.\par
+		
+		\textbf{Selection Sort} This algorithm first finds the smallest element in the array and exchanges it with the element in the first position, then find the second smallest element and exchange it with the  in the second position and continues in this way until the entire array is sorted.\par
+		
+		\textbf{Quick Sort} sorts any list very quickly basing on the rule of Divide and Conquer.\par
+		
+		\textbf{Merge Sort} also uses divide and conquer. Divides elements in two halves and merges the sorted halves.\par
+		
+		\textbf{Shell Sort} this method starts by sorting pairs of elements far apart from each other, then progressively reduces the gap between elements to be compared.
+
+\subsection {Problem Statement}
+	The increased confusion about the implementation of different sorting algorithms as it is evident in the different programs while using data structures.
+
+\subsection*{Main Objectives}
+	To make a survey of sorting algorithms and come up with implementation of the six sorting techniques which include  Bubble sort, Insertion sort, Selection sort, Merge sort, Quick sort and Shell sort.
+
+\subsection*{Specific Objectives}
+	The specific objectives of this research are as follows:
+		\begin{list}{}
+			\item i. Implement Six sorting techniques, namely Bubble sort, Insertion sort, Selection sort, Merge sort, Quick sort and Shell sort using random array data structure.
+			\item ii. Demonstrate the sorting techniques using animated visualization aid in comparing and analyzing the results for each of the six sorting techniques based on the algorithms’ complexity.
+		\end{list}
+
+\subsection{literture Review}
+
+\subsection{Introduction.}
+We describe different sorting algorithms which include bubble sort, insertion sort, selection sort, quick sort, mange sort, shell sort  Each algorithm is defined and explained their advantages and disadvantages are summarized.
+
+\subsection{Selection Sort}
+The algorithm works by finding [2] the smallest unsorted item and then swapping it with the item in the next position to be filled. The selection sort works as follows: you look through the entire array for the smallest element, once you find it you swap it (the smallest element) with the first element of the array. Then you look for the smallest element in the remaining array (an array without the first element) and swap it with the second element. Then you look for the smallest element in the remaining array (an array without first and second elements) and swap it with the third element, and so on.
+\subsubsection{Advantages}
+Better efficiency than bubble sort. 
+Simplicity and ease to implement selection sort would recommend for certain conditions.
+
+\subsubsection{Disadvantage}
+Selection sort is not efficient for large arrays instead insertions sort is preferred.
+
+\subsection{Bubble sort}
+Bubble sort [2] is a simple and the slowest sorting algorithm which works by comparing each element in the list with its neighboring elements and swapping them if they are in undesirable order. The algorithm continues this operation until it makes a pass right through the list without swapping any elements, which shows that the list is sorted. This process makes the algorithm works slower when the size of the input n increased. Because of this reason it considered to be the most inefficient sorting algorithm with large amount of data.
+
+\subsubsection{Advantage}
+Simplicity and ease of implementation and the ability to identify the list is already sorted if it is efficiently implemented.
+
+\subsubsection{Disadvantage}
+Code inefficient, inappropriate for large volumes of data elements and repetitive problems as well.
+
+\subsection{Insertion sort}
+Insertion sort [1] is a simple and efficient sorting algorithm useful for small lists and mostly sorted list. It works by inserting each element into its appropriate position in the final sorted list. For each insertion it takes one element and finds the appropriate position in the sorted list by comparing with neighboring elements and inserts it in that position. This operation is repeated until the list becomes sorted in the desired order. Insertion sort is an in- place algorithm and needed only a constant amount of additional memory space. It becomes more inefficient for the greater size of input data when compared to other algorithms.
+
+\subsubsection{Advantage}
+Simple and very efficient for smaller arrays, hence it works twice as efficiently as the bubble sort.
+
+\subsubsection{Disadvantage}	
+Inefficient for large arrays.
+
+\subsection{Merge sort}
+Merge sort uses [1] the divide and conquer approach to solve a given problem. It works by splitting the unsorted array into n sub array recursively until each sub array has 1 element. In general an array with one element is considered to be sorted. Consequently it merges each sub array to generate afinal sorted array. The divide and conquer approach works by dividing the array into two halves such as sub array and follows the same step for each sub array recursively until each sub array has 1 element. Later it combines each sub array into a sorted array until there is only 1 sub array with desired order. This can be also be done non-recursively however, most consider only recursive approaches for the reason that non recursive is not efficient. Merge sort is a stable sort meaning that it preserves the relative order of elements with equal key.
+
+\subsubsection{Advantage}
+Well suited for large arrays.
+
+\subsubsection{Disadvantages}
+It requires twice as much additional memory than other sophisticated sorting algorithms.
+It is not recommended for smaller arrays. 
+It is difficult to implement the merge operation.
+
+\subsection{Quick sort}
+Quick sort [1] is the fastest general purpose internal sorting algorithm on the average among other sophisticated algorithms. Unlike merge sort it does not require any additional memory space for sorting an array. For the reason that it is widely used in most real time application with large data sets. Quick sort uses divide and conquer approach for solving problems. It works by selecting elements from unsorted array named as a pivot and split the array into two parts called sub arrays and reconstruct the former part with the elements smaller than the pivot and the latter with elements larger than the pivot. This operation is called as partitioning. The algorithm repeats this operation recursively for both the sub arrays. In general, the leftmost or the rightmost element is selected as a pivot. Selecting the left most and right most element as pivot was practiced in the early version of quick sort and this causes the worst case behavior, if the array is already sorted.Later it was solved by various practices such as selecting a random pivot and taking the median of first, middle and last elements. Quick sort is an in-place algorithm and it works very well, even in a virtual memory environment.
+
+\subsubsection{Advantages}
+Quick sort is fast and efficient for large data sets. 
+
+\subsubsection{Disadvantages}
+It is not efficient if the array elements are already sorted and also each element in the array are equal.
+
+It's not efficient to sort real objects as its space expensive for large data sets.
+
+\subsection{Shell sort}
+Shell sort [2] is mainly a variation of insertion sort. While in insertion sort elements only move one position ahead, many movements are involved. In shell sort allows exchange of far items then then progressively reduces the gap between elements to be compared.
+
+\subsubsection{Advantage}
+Efficient for medium-size lists.
+
+\subsubsection{Disadvantage}
+Complex algorithm and not as efficient as merge ,quick and heap sort.
+
+\subsection{Conclusion}
+Depending on the array size, sorting algorithms like bubble, insertion and selection sort are best suited for arranging arrays with bubble sort being the less efficient compared to insertion and selection sort algorithms while for large arrays shell, quick and merge sort algorithms are best suited. shell sort is less efficient than quick and merge sort while merge requires more memory than quick sort.
+
+\subsection{Methodology}
+
+\subsubsection{Introduction}
+This section presents the study area, methods and techniques that will be used in data collection, analysis and processing. It also includes the design of the research. 	
+
+\subsubsection{Data collection techniques}
+To help us obtain objective 1, we shall use the following methods;
+
+\subsubsection{Document Review}
+This will involve carrying out research and extensive reading of existing materials and documentation regarding sorting algorithms. Resources such as thesis will be utilized.
+
+To help us obtain objective 2, we shall use the following method;
+
+\subsubsection{Implementation}
+The technologies that will be used during the implementation of this project will include programming languages like HTML and Javascript.
+
+\subsubsection{Testing and Validation}
+
+To help us obtain objective 2, we shall use the following methods;
+\subsubsection{Testing}
+Though Unit testing done after each module has been created and integration testing done as each of the created modules is assembled to work together and finally a system test after all the modules have been assembled to come up with the entire system.   
+
+\subsubsection{Validation}
+The complete system will be presented to end user representatives who will try out the system and verify that the developed system addresses all the requirements and will satisfy all the intended objectives.
+
+\subsection{References}
+[1] A Survey, Discussion and Comparison of Sorting Algorithms (2014) Ashok Kumar Karunanithi  https://pdfs.semanticscholar.org/ Accessed 15 April 2018.
+
+[2] Sorting: Runestone interactive. http://interactivepython.org/runestone/
+static/pythonds/SortSearch/sorting.html, 15 April 2018.
+		
+\end{document}
